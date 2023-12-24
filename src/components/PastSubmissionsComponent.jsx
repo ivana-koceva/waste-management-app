@@ -14,7 +14,7 @@ const SubmissionImageContainer = styled.div`
 `
 const SubmissionImage = styled.img`
     border-radius: 15px;
-    width: 190px;
+    width: 100%;
 `
 const SubmissionContainer = styled.div`
     display: grid;
@@ -43,16 +43,16 @@ export default function PastSubmissionsComponent({image, title, severity, catego
     return (
       <SubmissionsWrapper className="container">
         <div className="row">
-            <SubmissionImageContainer className="col-4">
+            <SubmissionImageContainer className="col-lg-4 col-12">
                 <SubmissionImage src={image}></SubmissionImage>
             </SubmissionImageContainer>
-        <SubmissionContainer className="col-6">
+        <SubmissionContainer className="col-lg-6 col-md-8 my-3">
             <SubmissionTitle>{title}</SubmissionTitle>
             <SubmissionText>{severity}</SubmissionText>
             <SubmissionText>{categories}</SubmissionText>
             <SubmissionText>{location}</SubmissionText>
         </SubmissionContainer>
-        <div className="col-1">
+        <div className="col-lg-1 col-md-3">
             <SubmissionReview >{review}</SubmissionReview>
         </div>
         </div>

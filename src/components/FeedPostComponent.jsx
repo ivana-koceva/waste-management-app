@@ -6,6 +6,14 @@ const PostWrapper = styled.div`
     border-radius: 46px;
     padding: 3rem;
     margin: 1rem 0;
+
+    @media (max-width: 991px) {
+        padding: 0 2rem;
+    }
+
+    @media (max-width: 767px) {
+        padding: 1.5rem;
+    }
 `
 const PostText = styled.p`
     font-family: 'Montserrat';
@@ -13,9 +21,18 @@ const PostText = styled.p`
     font-size: 18px;
     line-height: 24px;
     color: #1E1E1E;
+
+    @media (max-width: 991px) {
+        font-size: 16px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 14px;
+    }
 `
 const PostImage = styled.img`
-    width: 616px;
+    width: 100%;
+    height: 100%;
     height: 339px;
     border-radius: 18px;
 `
@@ -35,6 +52,14 @@ const PostProfileName = styled.h5`
     font-size: 22px;
     color: #000000;
     margin: 0 20px;
+
+    @media (max-width: 991px) {
+        font-size: 20px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 18px;
+    }
 `
 export default function FeedPostComponent({name, profileImage, feedImage, text}) {
     return (
