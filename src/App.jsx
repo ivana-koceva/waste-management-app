@@ -1,13 +1,12 @@
-import './App.css'
+import Map from '/src/components/Map.jsx';
 
 function App() {
-  return (
-    <>
-      <div>
-        
-      </div>
-    </>
-  )
+    return (
+        <div className="map_container">
+            <h1>Waste</h1>
+            <Map />
+        </div>
+    );
 }
 
-export default App
+export default App;
